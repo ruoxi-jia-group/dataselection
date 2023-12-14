@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>projektor</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">projektor | Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://twitter.com/feiyang_ml" target="_blank">Feiyang Kang<sup>1</sup></a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://justhoanganh.com" target="_blank">Hoàng Anh Just<sup>1</sup></a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://anitksahu.github.io/" target="_blank">Anit Kumar Sahu<sup>2</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://ruoxijia.info" target="_blank">Ruoxi Jia<sup>1</sup></a></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Virginia Tech, <sup>2</sup>Amazon Alexa AI<br>NeurIPS 2023
+                    <br> ICML 2023 Workshop on Data-centric Machine Learning Research</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://openreview.net/forum?id=quMBEd27x9" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>OpenReview</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/ruoxi-jia-group/projektor" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2307.02460" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>ArXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/web_projektor_abs.png" alt="MY ALT TEXT"/>
+      
+      <h2 class="subtitle has-text-centered">
+        Overview of projektor, which take as inputs the public pilot data from each source,
+        a selection budget, a target model, a validation set representing the test distribution, and return the
+      optimal combination of data sources as well as the prediction of the resulting model performance.</h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Traditionally, <strong>data selection</strong> has been studied in settings where all samples from
+prospective sources are fully revealed to a machine learning developer. However,
+in practical data exchange scenarios, data providers often reveal only a <strong>limited
+subset of samples</strong> before an acquisition decision is made. Recently, there have
+been efforts to fit scaling functions that predict model performance at any size
+and data source composition using the limited available samples. However, these
+scaling functions are usually black-box, computationally expensive to fit, highly
+susceptible to overfitting, or/and difficult to optimize for data selection. This paper
+proposes a framework called <strong>projektor</strong>, which <strong>predicts model performance</strong>
+and <strong>supports data selection</strong> decisions based on partial samples of prospective data
+sources. Our approach distinguishes itself from existing work by introducing a
+novel two-stage performance inference process. In the <strong>first stage</strong>, we leverage the
+Optimal Transport distance to predict the model’s performance <strong>for any data mixture</strong>
+ratio within the range of disclosed data sizes. In the <strong>second stage</strong>, we <strong>extrapolate
+the performance</strong> to larger undisclosed data sizes based on a novel <strong>parameter-
+free mapping</strong> technique inspired by neural scaling laws. We further derive an
+<strong>efficient gradient-based</strong> method to <strong>select data sources</strong> based on the projected model
+performance. Evaluation over a diverse range of applications (e.g., vision, text,
+fine-tuning, noisy data sources, etc.) demonstrates that projektor significantly
+improves existing performance scaling approaches in terms of both the accuracy of
+performance inference and the computation costs associated with constructing the
+performance predictor. Also, projektor outperforms by a wide margin in data
+selection effectiveness compared to a range of other off-the-shelf solutions. We
+provide projektor as an <a href="https://github.com/ruoxi-jia-group/projektor" target="_blank"><font color="Green">open-source toolkit</font></a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">projektor | Data Selection Pipeline</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/projektor1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Problem setup of <strong>projektor</strong>. 1/N
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/projektor2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Performance Predictor For a Fixed Small Scale. 2/N
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/projektor3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Performance Projection to Larger Scale N. 3/5
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/projektor4.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Efficient Data Composition Optimization. 4/5
+.
+      </h2>
+    </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/projektor5.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Data Selection with <strong>projektor</strong>. 5/5
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Project Poster (NeurIPS 2023)</h2>
+
+      <iframe  src="static/pdfs/NeurIPS'23_projektor.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+    
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+      @inproceedings{
+      kang2023performance,
+      title={Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources},
+      author={Feiyang Kang and Hoang Anh Just and Anit Kumar Sahu and Ruoxi Jia},
+      booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+      year={2023},
+      url={https://openreview.net/forum?id=quMBEd27x9}
+      }
+    </code></pre>
+
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            <a href="https://ruoxijia.info/reds" target="_blank">ReDS Lab @ 2023</a> | We greatly appreciate the author for providing the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
